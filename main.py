@@ -14,7 +14,7 @@ import sys
 import gi
 
 gi.require_version("Gtk", "4.0")
-from gi.repository import Gtk
+from gi.repository import Gtk, GLib
 
 
 # --- ANSI escape code stripper ---
@@ -74,7 +74,8 @@ def main() -> int:
     output = cleanOutput(raw)
 
     # Build the window
-    app = Gtk.Application(application_id="lucie.cliviewer")
+    GLib.set_prgname("Luci4GTKviewer")
+    app = Gtk.Application(application_id="luci.Luci4GTKviewer")
 
     def on_activate(_app):
         win = Gtk.ApplicationWindow(application=app, title="CLI Viewer")
@@ -107,3 +108,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
