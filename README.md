@@ -130,16 +130,6 @@ python3 main.py ~/my-configs/weather.json
 }
 ```
 
-**NPB baseball results (using the npb-fetch CLI):**
-
-```json
-{
-    "command": "~/Code/Python/BaseballNpbFetch/.venv/bin/npb-fetch schedule recent && echo ' ' && ~/Code/Python/BaseballNpbFetch/.venv/bin/npb-fetch standings central 2026 && echo ' ' && ~/Code/Python/BaseballNpbFetch/.venv/bin/npb-fetch standings pacific 2026",
-    "width": 800,
-    "height": 600
-}
-```
-
 **Multiple commands chained with `&&`:**
 
 ```json
