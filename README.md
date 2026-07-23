@@ -1,6 +1,6 @@
 # GtkCmdWindow
 
-A minimal, suckless GTK4 window that runs a shell command and displays its output in a monospace text view. Configure the command in `config.json`, run the app, done.
+A minimal, suckless-like GTK4 window that runs a shell command and displays its output in a monospace text view. Configure the command in `config.json`, run the app, done.
 
 ANSI escape codes (colors, cursor moves, progress bars) are automatically stripped so output from tools like `curl`, `htop`, `neofetch`, or any CLI program renders as clean text — no escape sequence garbage.
 
@@ -74,7 +74,7 @@ python3 main.py /path/to/my-config.json
 python3 main.py
 ```
 
-3. A GTK window opens showing the weather forecast — clean, no ANSI garbage.
+3. A GTK window opens showing the weather forecast, clean, no ANSI garbage.
 
 ---
 
@@ -304,9 +304,3 @@ After stripping, the output contains only readable text: Unicode box-drawing cha
 | Python 3.10+ | Runtime | `python` | `python3` |
 
 No pip packages. No virtual environment. No build step. Just system packages and a single Python file.
-
----
-
-## License
-
-MIT
