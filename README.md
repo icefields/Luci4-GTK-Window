@@ -1,3 +1,5 @@
+> AI Warning: This Readme is partially AI genereated, I asked the llm to analyze and describe the code, create a table of content, and formatting.
+> 
 # GtkCmdWindow
 
 A minimal, suckless-like GTK4 window that runs a shell command and displays its output in a monospace text view. Configure the command in `config.json`, run the app, done.
